@@ -11,10 +11,11 @@
 }
 
 body {
+  margin: 0;
   letter-spacing: 0.03em;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .list {
   list-style: none;
@@ -43,7 +44,7 @@ body {
 
 /* logo */
 .logo-up {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -172,7 +173,7 @@ body {
   color: var(--primary-white-color);
 }
 .logo-down {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
