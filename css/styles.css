@@ -40,6 +40,20 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  /* border box */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+/* heder */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid greenyellow;
 }
 
 /* logo */
@@ -99,6 +113,10 @@ body {
 }
 /* button */
 .hero-button {
+  border: 0px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   line-height: 1.88;
   display: flex;
@@ -108,6 +126,9 @@ body {
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
