@@ -35,6 +35,10 @@ p {
   margin-top: 0;
 }
 
+img {
+  display: block;
+}
+
 .gallery .link {
   text-decoration: none;
   list-style: none;
@@ -65,7 +69,9 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid greenyellow;
+  /* outline: 2px solid greenyellow; */
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header {
   display: flex;
@@ -187,20 +193,6 @@ p {
   background-color: var(--accent-hover-color);
 }
 
-.basic-button {
-  font-weight: 500;
-  line-height: 1.63;
-  text-align: center;
-  font-family: inherit;
-  cursor: pointer;
-  color: var(--secondery-text-color);
-  background-color: var(--accent-button-color);
-}
-.basic-button:hover,
-.basic-button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-hover-color);
-}
 /* section */
 .section {
   padding-top: 94px;
@@ -218,19 +210,16 @@ p {
 /* features */
 
 .feature-list .title {
-  margin-bottom: 9.9px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondery-text-color);
 }
 .feature-list {
+  display: flex;
   font-size: 14px;
   line-height: 1.7;
-}
-
-.feature-list.list {
-  display: flex;
 }
 
 /* team */
@@ -283,7 +272,54 @@ p {
   color: var(--accent-color);
 }
 
+/* portfolio main button */
+
+.basic-button {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--secondery-text-color);
+  background-color: var(--accent-button-color);
+}
+
+.basic-button:hover,
+.basic-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.section-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.section-button .item + .item {
+  margin-left: 8px;
+}
+
 /* gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.gallery > .item {
+  flex-basis: calc(100% / 3-20px);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
 .gallery .header {
   font-size: 18px;
   line-height: 2;
@@ -293,4 +329,18 @@ p {
 .foto {
   line-height: 1.88;
   color: var(--primary-text-color);
+}
+
+.gallery-heading {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondery-text-color);
+}
+.gallery-content {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
