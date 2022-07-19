@@ -30,9 +30,13 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  margin-top: 0;
+}
+
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 img {
@@ -57,19 +61,12 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* border box */
-/* *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  } */
 
 /* heder */
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  /* outline: 2px solid greenyellow; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -146,7 +143,7 @@ img {
   color: var(--accent-color);
 }
 
-/* .hero { */
+/* hero { */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -159,9 +156,8 @@ img {
 }
 
 .hero-title {
-  margin: 0 auto 30px;
+  text-align: center;
 
-  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.39;
@@ -221,8 +217,23 @@ img {
   font-size: 14px;
   line-height: 1.7;
 }
+.feature-list > .item {
+  flex-basis: calc(100% / 4);
+}
 
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+/* Work */
+.work-list.list {
+  display: flex;
+}
+
+.work-list .item + .item {
+  margin-left: 30px;
+}
 /* team */
+
 .team {
   background-color: var(--accent-button-color);
 }
@@ -236,12 +247,21 @@ img {
   color: var(--secondery-text-color);
 }
 .team-list {
+  display: flex;
   line-height: 1.19;
   text-align: center;
 }
+.team-list .item + .item {
+  margin-left: 30px;
+}
 
-.team-list p {
-  margin-bottom: 30px;
+.team-content {
+  padding: 30px 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-white-color);
 }
 /* footer */
 
@@ -260,6 +280,7 @@ img {
 }
 
 .aside-contact {
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
@@ -341,6 +362,6 @@ img {
 .gallery-content {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  border-right: 1px solid #EEEEEEE;
   border-bottom: 1px solid #eeeeee;
 }
