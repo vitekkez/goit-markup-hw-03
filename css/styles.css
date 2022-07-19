@@ -43,10 +43,10 @@ img {
   display: block;
 }
 
-.gallery .link {
+/* .gallery .link {
   text-decoration: none;
   list-style: none;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -75,7 +75,8 @@ img {
   align-items: center;
 }
 .container.header {
-  padding: 12px 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 /* logo */
@@ -156,8 +157,6 @@ img {
 }
 
 .hero-title {
-  text-align: center;
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.39;
@@ -218,7 +217,7 @@ img {
   line-height: 1.7;
 }
 .feature-list > .item {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% / 4-30);
 }
 
 .feature-list .item + .item {
@@ -227,6 +226,9 @@ img {
 /* Work */
 .work-list.list {
   display: flex;
+}
+.work-list > .item {
+  flex-basis: calc(100% / 3-30px);
 }
 
 .work-list .item + .item {
@@ -251,6 +253,11 @@ img {
   line-height: 1.19;
   text-align: center;
 }
+
+.team-list > .item {
+  flex-basis: calc(100% / 4-30px);
+}
+
 .team-list .item + .item {
   margin-left: 30px;
 }
@@ -271,6 +278,7 @@ img {
   background-color: var(--primary-background-color);
   color: var(--primary-white-color);
 }
+
 .logo-down {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
