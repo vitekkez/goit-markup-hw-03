@@ -70,13 +70,15 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+.top-side {
+  border-bottom: 1px solid #ececec;
+}
 .header {
   display: flex;
   align-items: center;
 }
 .container.header {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* border-bottom: 1px solid #ececec; */
 }
 
 /* logo */
@@ -104,8 +106,8 @@ img {
 
 .site-nav .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondery-text-color);
   font-weight: 500;
@@ -217,13 +219,18 @@ img {
   line-height: 1.7;
 }
 .feature-list > .item {
-  flex-basis: calc(100% / 4-30);
+  min-width: 270px;
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .feature-list .item + .item {
   margin-left: 30px;
 }
 /* Work */
+.section.work {
+  padding-top: 0;
+}
+
 .work-list.list {
   display: flex;
 }
@@ -300,7 +307,12 @@ img {
 .contact-down .link:focus {
   color: var(--accent-color);
 }
-
+.contact-down.list {
+  margin-top: 9px;
+}
+.contact-down > .item:first-child {
+  margin-bottom: 9px;
+}
 /* portfolio main button */
 
 .basic-button {
@@ -339,14 +351,14 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  margin-left: -20px;
-  margin-top: -20px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .gallery > .item {
-  flex-basis: calc(100% / 3-20px);
-  margin-left: 20px;
-  margin-top: 20px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .gallery .header {
